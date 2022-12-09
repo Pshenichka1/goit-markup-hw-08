@@ -1,0 +1,78 @@
+.section-team,
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+
+.section-clients {
+    background-color: #FFFFFF;
+}
+
+.img-list__item {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+}
+
+.team__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--color-title);
+    @include font (500, 16px, 1.1719, 0.03em);
+    text-align: center;
+}
+
+.team__specialist {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--color-gray);
+    @include font (400, 16px, 1.1719, 0.03em);
+    text-align: center;
+}
+
+.team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+}
+
+.specialist-list {
+    @include flex;
+    gap: 10px;
+}
+
+.specialist-list__item {
+    width: 44px;
+    height: 44px;
+}
+
+.specialist-list__link {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    @include flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+            }
+}
+
+.specialist-list__icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .specialist-list__link:focus & {
+            fill: #FFFFFF;
+        }
+    .specialist-list__link:hover & {
+            fill: #FFFFFF;
+        }
+}
+
+
+
+
+

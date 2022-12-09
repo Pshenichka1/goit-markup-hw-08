@@ -1,0 +1,54 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.container,
+.container-header,
+.container-footer,
+.container-portfolio {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        }
+}
+ .container-header,
+ .container-footer {
+     padding-top: 0;
+}
+
+ .project-list,
+ .img-list,
+ .our-advantages-list,
+ .portfolio-list,
+ .site-nav-list,
+ .list,
+ .contacts-list,
+ .specialist-list,
+ .client-list,
+ .foot-list {
+
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+.project-list__link,
+.site-nav-link,
+.contacts,
+.list-link,
+.logo,
+.logo-footer {
+    text-decoration: none;
+}
+
+  .page {
+     background-color: var(--color-white)
+ }
