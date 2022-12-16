@@ -57,14 +57,21 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+         </button>
+         
       </div>
     </header>
     <main>
       <section class="portfolio">
         <!-- <h1 class="portfolio-title">Портфоліо</h1> -->
         <div class="container-portfolio">
+          
 
-        <ul class="portfolio-list">
+         <ul class="portfolio-list">
           <li class="list-button">
             <button class="button-all current" type="button">Усі</button>
           </li>
@@ -81,15 +88,27 @@
             <button class="button" type="button">Маркетинг</button>
           </li>
         </ul>
+        
             
         <ul class="project-list">
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img11.jpg" 
-              width="370"
-              height="294"
-              alt="фото" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img11.jpg 1x, ./images/img11-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img11-tab.jpg 1x, ./images/img11-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img11-mob.jpg 1x, ./images/img11-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img11-mob.jpg" 
+                  width="450" 
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
+              
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -102,10 +121,21 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img12.jpg" 
-              width="370"
-              height="294"
-              alt="гра в баскетбол" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img12.jpg 1x, ./images/img12-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img12-tab.jpg 1x, ./images/img12-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img12-mob.jpg 1x, ./images/img12-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img12-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
+              
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -118,10 +148,20 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img13.jpg" 
-              width="370"
-              height="294"
-              alt="назва ресторану" class="project-list__icon" />
+              <picture>
+                  <source srcset="./images/img13.jpg 1x, ./images/img13-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img13-tab.jpg 1x, ./images/img13-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img13-mob.jpg 1x, ./images/img13-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img13-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -135,10 +175,20 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img14.jpg" 
-              width="370"
-              height="294"
-              alt="навушники" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img14.jpg 1x, ./images/img14-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img14-tab.jpg 1x, ./images/img14-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img14-mob.jpg 1x, ./images/img14-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img14-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -151,10 +201,21 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img15.jpg" 
-              width="370"
-              height="294"
-              alt="коробки" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img15.jpg 1x, ./images/img15-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img15-tab.jpg 1x, ./images/img15-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img15-mob.jpg 1x, ./images/img15-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img15-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
+              
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -167,10 +228,21 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img16.jpg" 
-              width="370"
-              height="294"
-              alt="монітор" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img16.jpg 1x, ./images/img16-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img16-tab.jpg 1x, ./images/img16-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img16-mob.jpg 1x, ./images/img16-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img16-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
+              
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -183,10 +255,21 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img17.jpg" 
-              width="370"
-              height="294"
-              alt="журнал" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img17.jpg 1x, ./images/img17-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img17-tab.jpg 1x, ./images/img17-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img17-mob.jpg 1x, ./images/img17-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img17-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
+              
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -199,10 +282,21 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img18.jpg" 
-              width="370"
-              height="294"
-              alt="етикетка" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img18.jpg 1x, ./images/img18-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img18-tab.jpg 1x, ./images/img18-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img18-mob.jpg 1x, ./images/img18-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img18-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
+              
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -215,10 +309,21 @@
           <li class="project-list__item">
             <a class="project-list__link" href="#">
               <div class="portfolio-wrap">
-              <img src="./images/img19.jpg" 
-              width="370"
-              height="294"
-              alt="ноутбук" class="project-list__icon" />
+                <picture>
+                  <source srcset="./images/img19.jpg 1x, ./images/img19-2x.jpg 2x" 
+                  media="(min-width: 1200px)"/>
+                  <source srcset="./images/img19-tab.jpg 1x, ./images/img19-tab-2x.jpg 2x" 
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/img19-mob.jpg 1x, ./images/img19-mob-2x.jpg 2x" 
+                  media="(max-width: 767px)"/>
+                  <img
+                  src="./images/img19-mob.jpg" 
+                  width="450"
+                  height="294"
+                  alt="фото" 
+                  class="project-list__icon" />
+                </picture>
+              
               <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
               </div>
@@ -235,6 +340,7 @@
     <footer class="section-foot">
       <div class="container-footer">
         <div class="div-foot">
+          <div class="div-foot-tablet">
           <div class="div-contacts">
         <a href="#" class="logo-footer"
           ><span class="first-part">Web</span
@@ -292,6 +398,7 @@
               </a>
               </li>
               </ul>
+        </div>
         </div>
         <div class="user-sub">
            <p class="form-email">Підпишіться на розсилку</p>

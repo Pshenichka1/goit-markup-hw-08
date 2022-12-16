@@ -1,6 +1,13 @@
- .logo {
+  .logo {
+   display: inline-block;
+   @include tablet {
+      margin-right: 88px;
+   }
+   
+     @include desktop {
      margin-right: 93px;
- }
+     }
+  }
 
  .first-part {
      color: var(--color-blue);
@@ -17,96 +24,302 @@
  .first-part,
  .second-part,
  .second-part-foot {
+   font-family: Raleway, sans-serif;
+      @include font (700, 24px, 1.174, 0.03em);
 
+      @include desktop {
      font-family: Raleway, sans-serif;
      @include font (700, 26px, 1.1923, 0.03em);
+      }
 
  }
+ .container-header {
+ 
+    height: 60px;
+    margin: 0;
+    display: flex;
+    max-width: 767px;
+    @include tablet {
+      display: inline-block;
+      height: 80px;
+      max-width: 1199px;
+    }
+    @include desktop {
+      display: flex;
+      height: 80px;
+      max-width: 1200px;
+    }
+    
+ }
+ .mob-menu {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    top: 0;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 48px;
+    padding-right: 15px;
+    @include tablet {
+        display: none;
+    }
+ }
+
+ .mob-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+ }
+ .menu-open {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    display: block;
+    &:hover,
+    &:focus {
+      color: #2196F3;
+    }
+    @include tablet {
+        display: none;
+    }
+ }
+ .menu-close {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    border: none;
+    &:hover,
+    &:focus {
+      color: #2196F3;
+    }
+
+ }
+ .mob-nav-link {
+    @include font (500, 40px, 1.172, 0.02em);
+    color: #212121;
+    &:focus,
+    &:hover {
+      color: #2196F3;
+    }
+    
+  }
+  .mob-nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mob-contacts-item:not(:last-child) {
+    margin-bottom: 32px;
+    
+  }
+  .mob-contacts-mail {
+    @include font (500, 24px, 1.172, 0.02em);
+    color: #757575;
+  }
+  .mob-contacts-tel {
+    @include font (500, 34px, 1.1717, 00.02em);
+    color: var(--color-blue);
+  }
+  .menu-soc-list {margin-top: 64px;
+    display: flex;
+    gap: 20px;    
+ }
+ .menu-soc-item {
+    @include font (500, 18px, 1.222, 0.02em);
+    color: var(--color-blue);
+    position: relative;
+    
+ }
+ .menu-soc-item::after {
+    content: "";
+    width: 1px;
+    height: 22px;
+    color: rgba(33, 33, 33, 0.2);
+    position: absolute;
+ }
+ 
  .site-nav-link {
+    display: none;
+    @include tablet {
       display: block;
+      @include font (500, 14px, 1.172, 0.02em);
       padding-top: 32px;
       padding-bottom: 32px;
       color: var(--color-title);
       position: relative;
-        &::after {
+         &::after {
             content: "";
             position: absolute;
-            opacity: 0;
-            width: 100%;
-            height: 4px;
-            background-color: var(--color-blue);
-            left: 0;
-            bottom: 0;
+             opacity: 0;
+             width: 100%;
+             height: 4px;
+             border-radius: 2px;
+             background-color: var(--color-blue);
+             left: 0;
+             bottom: 0;
+         }
+         &.current::after {
+             opacity: 1;
+         }
+                 }
+    @include desktop {
+         display: block;
+         @include font (500, 14px, 1.172, 0.02em);
+         padding-top: 32px;
+         padding-bottom: 32px;
+         color: var(--color-title);
+         position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                opacity: 0;
+                width: 100%;
+                height: 4px;
+                background-color: var(--color-blue);
+                left: 0;
+                bottom: 0;
+               border-radius: 2px;
+            }
+        
+            &.current::after {
+                opacity: 1;
+            }
+
         }
-        &.current::after {
-            opacity: 1;
-        }
-  }
-  .site-nav-item {
+   }
+
+   .site-nav-item {
+    @include tablet {
       margin-right: 50px;
       &:last-child {
+         margin-right: 0;
+         }
+
+    }  
+    @include desktop {
+       margin-right: 50px;
+       &:last-child {
           margin-right: 0;
-      }
+       }
+           }
   }
 
-  .contacts {
-      @include flex;
-      width: 100%;
-      height: 100%;
-      color: var(--color-gray);
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+   .contacts {
+     display: none;
+     @include tablet {
+        @include flex;
+        @include font (500, 12px, 1.172, 0.02em);
+            width: 100%;
+            height: 100%;
+            color: var(--color-gray);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+     @include desktop {
+      //   @include flex;
+         @include font (500, 14px, 1.172, 0.02em);
+            width: 100%;
+            height: 100%;
+            color: var(--color-gray);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .contacts-icon {
+     }
+     
+   }
+
+   .contacts-icon { 
+   @include tablet {
       fill: var(--color-gray);
       margin-right: 10px;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        .contacts:hover &,
-        .contacts:focus & {
-            fill: #2196F3;
-            }
-  }
+      .contacts:hover &,
+      .contacts:focus & {
+         fill: #2196F3;
+         }
+      }
+   @include desktop {
+       fill: var(--color-gray);
+       margin-right: 10px;
+       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      .contacts:hover &,
+      .contacts:focus & {
+         fill: #2196F3;
+         }
+      }
+   }
 
- .contacts-item+.contacts-item {
-      margin-left: 50px;
-  }
+  .contacts-item+.contacts-item {
+    @include desktop {
+       margin-left: 40px;
+    }
+   }
 
-  .contacts-item {
+  .contacts-item { 
+    @include desktop {
       padding-top: 32px;
-      padding-bottom: 32px;
+       padding-bottom: 32px;
+       
+    }
+
   }
 
-  .site-nav-link,
-  .contacts {
-      @include font (500, 14px, 1.1721, 0.02em);
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   .site-nav-link,
+   .contacts {
+    @include desktop {
+       
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
 
-  .site-nav-link:hover,
-  .site-nav-link:focus,
-  .site-nav-link.current {
+   .site-nav-link:hover,
+   .site-nav-link:focus,
+   .site-nav-link.current {
+    @include desktop {
       color: var(--color-blue);
-      opacity: 1;
+       opacity: 1;
   }
+}
   
-  .contacts:hover,
-  .contacts:focus {
-      color: var(--color-blue);
+   .contacts:hover,
+   .contacts:focus {
+    @include desktop {
+       color: var(--color-blue);
+    }
 
-  }
+   }
   .header {
       border-bottom: 1px solid #ECECEC;
+      @include desktop {
+      height: 80px;
+      }
   }
   .site-nav {
-      display: flex;
-      align-items: center;
-  }
+   display: flex;
+   align-items: center;
+}
 
-  .site-nav-list {
+   .site-nav-list {
+      @include tablet {
+         display: flex;
+      }
+    @include desktop {
       display: flex;
   }
-  .contacts-list {
+ }
+   .contacts-list {
+      @include tablet {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         margin-left: auto;
+         align-items: flex-start;
+      }
+    @include desktop {
       display: flex;
-      margin-left: auto;
-      gap: 10px;
-  }
+       gap: 40px;
+       flex-direction: row;
+       margin-left: 260px;
+   }
+}

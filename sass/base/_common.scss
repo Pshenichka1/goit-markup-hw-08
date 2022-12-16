@@ -7,8 +7,8 @@ body {
 .container-footer,
 .container-portfolio {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+     padding-left: 15px;
+     padding-right: 15px;
     margin: 0 auto;
     @media screen and (min-width: 480px) {
         max-width: 480px;
@@ -17,14 +17,19 @@ body {
         max-width: 768px;
         }
     @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+        max-width: 1600px;
+       
         }
 }
  .container-header,
  .container-footer {
      padding-top: 0;
+    
 }
-
+.mob-contacts-list,
+ .menu-soc-list,
+ .mob-nav-list,
+ .presentation-list,   
  .project-list,
  .img-list,
  .our-advantages-list,
@@ -40,6 +45,8 @@ body {
      padding: 0;
      margin: 0;
 }
+.mob-contacts,
+.mob-nav-link,
 .project-list__link,
 .site-nav-link,
 .contacts,

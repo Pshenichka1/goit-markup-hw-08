@@ -1,8 +1,24 @@
 .div-contacts {
+    @include desktop {
     margin-right: 70px;
+    }
+}
+.div-foot-tablet {
+    @include tablet {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        margin-bottom: 60px;
+        
+    }
 }
 .logo-footer {
-    display: inline-block;
+    display: block;
+    text-align: center;
+    margin-bottom: 14px;
+    @include desktop {
+        display: inline-block;
+    }
 }
 
 .address {
@@ -15,13 +31,22 @@
     background-color: #2F303A;
 }
 .list {
+    display: block;
+    text-align: center;
+    @include desktop {
     display: inline-block
+    }
 }
 
 .contacts-foot-address {
+    margin-bottom: 12px;
+    
+    color: #FFFFFF;
+    @include desktop {
     margin-bottom: 9px;
     margin-top: 20px;
     color: #FFFFFF;
+    }
 }
 
 .foot-item:not(:last-child) {
@@ -34,14 +59,33 @@
 
 .contacts-foot-address,
 .contacts-foot {
+    
+    text-align: center;
+    
+    @include font (400, 14px, 1.142, 0.03em);
+    text-decoration: none;
+
+    @include desktop {
     @include font (400, 14px, 1.7143, 0.03em);
     text-decoration: none;
+    }
 }
 
 .foot-networks {
+    margin-top: 60px;
+    margin-bottom: 60px; 
+    text-align: center;
+    @include tablet {
+        margin: 0;
+    }
+    @include desktop {
     width: 206px;
     height: 80px;
     margin-right: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: start;
+    }
 }
 
 .foot-title {
@@ -53,8 +97,10 @@
 }
 
 .div-foot {
+    @include desktop {
     display: flex;
     align-items: baseline;
+    }
 }
 
 .foot-list {
@@ -94,15 +140,33 @@
     padding-left: 93px;
 }
 .form-email {
+    display: block;
+    text-align: center;
     margin-bottom: 20px;
     color: #FFFFFF;
     @include font (700, 14px, 1.1721, 0.03em);
     text-transform: uppercase;
+    @include desktop {
+        margin-bottom: 20px;
+        color: #FFFFFF;
+        @include font (700, 14px, 1.1721, 0.03em);
+        text-transform: uppercase;
+        text-align: start;
+
+    }
 }
 
 .user-mail {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    @include desktop {
+    display: flex;
     gap: 12px;
+    flex-direction: row;
+    }
 }
 
 .email-input::placeholder {
@@ -111,7 +175,8 @@
 }
 
 .submit {
-    margin-left: 12px;
+   
+    justify-content: center;
     padding: 10px 28px;
     width: 200px;
     height: 50px;
@@ -126,6 +191,10 @@
     &:focus {
         background-color: #188CE8;
             }
+            @include desktop {
+            margin-left: 12px;
+            display: inline-flex;
+            }
 }
 
 .icon-send {
@@ -134,10 +203,11 @@
 }
 
 .email-input {
+    margin-bottom: 20px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
-    min-width: 358px;
+    min-width: 450px;
     height: 50px;
     border-radius: 4px;
     background-color: transparent;
@@ -149,6 +219,10 @@
     &:focus {
         border-color: var(--color-blue);
         outline: none;
+            }
+            @include desktop {
+                min-width: 358px;
+                margin-bottom: 0;
             }
 }
 

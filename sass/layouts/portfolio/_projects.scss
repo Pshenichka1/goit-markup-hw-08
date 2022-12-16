@@ -8,7 +8,16 @@
 }
 
 .project-list__item {
-    flex-basis:calc((100% - 60px) / 3);
+    @media screen and (min-width: 768px) {
+            width: 354px;
+            width: calc((100% - 30px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+            width: 370px;
+            width: calc((100% - 60px) / 3);
+            height: 404px;
+        }
+    
 }
 
 .project-list__link {
@@ -21,8 +30,16 @@
 }
 .box-projects {
     padding: 20px 24px;
-    width: 370px;
+    width: 450px;
     border: 1px solid #EEEEEE;
+    @include tablet {
+        width: 354px;
+        height: 146px;
+    }
+    @include desktop {
+        width: 370px;
+        height: 110px;
+    }
 }
 
 .project-list__icon {

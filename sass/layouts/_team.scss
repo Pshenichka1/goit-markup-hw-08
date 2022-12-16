@@ -1,19 +1,28 @@
-.section-team,
-.section-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #F5F4FA;
 }
 
-.section-clients {
-    background-color: #FFFFFF;
+
+.img-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .img-list__item {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    &:not(:last-child) {
-        margin-right: 30px;
-        }
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+            }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+            }
+}
+.img-item {
+    max-width: 100%;
 }
 
 .team__title {
@@ -33,6 +42,7 @@
 }
 
 .team {
+    
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #FFFFFF;
@@ -40,7 +50,8 @@
 
 .specialist-list {
     @include flex;
-    gap: 10px;
+   gap: 10px;
+    
 }
 
 .specialist-list__item {
