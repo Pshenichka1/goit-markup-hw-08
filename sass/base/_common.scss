@@ -17,7 +17,7 @@ body {
         max-width: 768px;
         }
     @media screen and (min-width: 1200px) {
-        max-width: 1600px;
+        max-width: 1200px;
        
         }
 }
@@ -26,7 +26,8 @@ body {
      padding-top: 0;
     
 }
-.mob-contacts-list,
+ 
+ .mob-contacts-list,
  .menu-soc-list,
  .mob-nav-list,
  .presentation-list,   
@@ -45,6 +46,8 @@ body {
      padding: 0;
      margin: 0;
 }
+.mob-contacts-tel,
+.mob-contacts-mail,
 .mob-contacts,
 .mob-nav-link,
 .project-list__link,

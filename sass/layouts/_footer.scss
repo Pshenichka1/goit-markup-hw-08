@@ -9,7 +9,9 @@
         align-items: baseline;
         justify-content: space-around;
         margin-bottom: 60px;
-        
+    }
+    @include desktop {
+        margin-bottom: 0;
     }
 }
 .logo-footer {
@@ -207,7 +209,7 @@
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
-    min-width: 450px;
+    min-width: 290px;
     height: 50px;
     border-radius: 4px;
     background-color: transparent;
@@ -219,6 +221,9 @@
     &:focus {
         border-color: var(--color-blue);
         outline: none;
+            }
+            @include tablet {
+                min-width: 450px;
             }
             @include desktop {
                 min-width: 358px;

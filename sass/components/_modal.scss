@@ -14,8 +14,8 @@
 
 .modal {
     padding: 40px;
-    width: 450px;
-    max-height: 609px;
+    min-width: 290px;
+    
     background-color: var(--color-white);
     border-radius: 4px;
     position: absolute;
@@ -23,6 +23,12 @@
     left: 50%;
     transform: translate(-50%, -50%) scaleX(1);
     transition: transform 350ms linear;
+    @include tablet {
+        padding: 40px;
+        width: 450px;
+        max-height: 609px;
+
+    }
     @include desktop {
     padding: 40px;
     width: 528px;
